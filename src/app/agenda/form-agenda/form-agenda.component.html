@@ -1,0 +1,26 @@
+<div class="container d-flex justify-content-center mt-5">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Novo Contato</h4>
+      <form (ngSubmit)="onSave()" [formGroup]="contactForm">
+        <div class="mb-3">
+          <label for="" class="form-label">Nome</label>
+          <input type="text" formControlName="nome" class="form-control" placeholder="Nome">
+          <small *ngIf="" id="helpId" class="text-muted"></small>
+        </div>
+        <div class="mb-3">
+          <label for="" class="form-label">Telefone</label>
+          <input type="number" formControlName="telefone" class="form-control" placeholder="Telefone" minlength="10"
+            maxlength="11">
+          <small *ngIf="" id="helpId" class="text-muted"></small>
+        </div>
+        <div class="flex-row">
+          <a routerLink="/agenda/lista" class="btn btn-secondary">Voltar</a>
+          <button type="submit" [disabled]="!contactForm.valid" class="btn btn-primary mx-2">Salvar</button>
+
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

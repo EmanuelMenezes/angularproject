@@ -1,0 +1,41 @@
+<div class="screen-container">
+  <div class="middle">
+    <div class="header px-5">
+      <a routerLink="/agenda/novo" class="my-btn"><span class="material-icons-round">
+          add
+        </span></a>
+    </div>
+    <div class="table-wrapper">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Telefone</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let contato of contatos">
+            <td>{{contato.nome}}</td>
+            <td>{{contato.telefone}}</td>
+            <td class="action">
+              <a class="" routerLink="/agenda/editar/{{contato.id}}">
+                <span class="material-icons-round">
+                  edit
+                </span>
+              </a>
+              <button class="" (click)="deleteContact(contato.id)">
+                <span class="material-icons-round">
+                  delete
+                </span>
+              </button>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+
+</div>

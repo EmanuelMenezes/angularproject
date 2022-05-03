@@ -1,0 +1,102 @@
+.my-btn {
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0);
+  background: #e8e8f3;
+  border-radius: 100%;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  color: #c3c2c7;
+  span {
+    line-height: 34px;
+    font-size: 34px;
+    padding: 3px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+}
+.table-wrapper {
+  width: 100%;
+  height: calc(100vh - 300px);
+  margin-top: 20px;
+  padding-top: 20px;
+  background-color: #e8e8f3;
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -0px -0px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 7px rgba(255, 255, 255, 0.2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 10px rgba(255, 255, 255, 0);
+  border-radius: 10px;
+  table {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    th,
+    td {
+      padding: 10px 20px;
+    }
+    th {
+      border-bottom: 1px solid #d2d2d2;
+    }
+    tr:nth-child(even) {
+      background-color: rgba(107, 107, 255, 0.194);
+    }
+    td {
+      height: 30px;
+    }
+    button {
+      padding: 0;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: none;
+      color: #333;
+      border: 1px solid transparent;
+      text-align: center;
+      &:hover {
+        color: red;
+      }
+      span {
+        font-size: 16px;
+        padding: 3px;
+      }
+    }
+    a {
+      padding: 0;
+      margin: 0;
+      height: 24px;
+      width: 24px;
+      border-radius: 50%;
+      background: none;
+      color: #333;
+      border: 1px solid transparent;
+      text-align: center;
+      &:hover {
+        color: blue;
+      }
+      span {
+        font-size: 16px;
+        padding: 3px;
+      }
+    }
+  }
+}
+.screen-container {
+  padding: 60px 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  vertical-align: middle;
+  height: 100%;
+}
+.action {
+}
